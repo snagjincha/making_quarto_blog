@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "posts/test.html",
+    "href": "posts/test.html",
+    "title": ".",
+    "section": "",
+    "text": "Quarto blog 만들기\n\n1. 깃헙 레포지토리 만들기\n2. 터미널에서 ssh 서버 접속\n3. 만든 레포지토리 git clone\n4. cd &lt;레포지토리이름&gt; 해서 들어가기\n5. quarto create -&gt; 엔터 -&gt; blog 선택 후 엔터\n6. ls 쳐봐서 파일들이 잘 생겼는지 확인\n7. git add . git commit -m . git push 로 생긴 파일 올리기\n8. quarto render로 터미널에서 docs 폴더 생성\n9. vi _quarto.yml 치고 들어가서 type 밑줄에다가 output-dir: docs를 입력\n10. Esc 누르고 shift zz 치면 빠져나와짐\n11. Quarto render 쳐줌 docs 안에 많은 폴더들이 생김\n12. git add . git commit -m . git push 로 생긴 파일 올리기\n13. Setting -&gt; pages -&gt; docs로 설정 후 save"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": ".",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
+  }
+]
