@@ -1,17 +1,87 @@
 [
   {
-    "objectID": "posts/test.html",
-    "href": "posts/test.html",
-    "title": ".",
+    "objectID": "posts/HTMQB.html",
+    "href": "posts/HTMQB.html",
+    "title": "How to make quarto blog",
     "section": "",
-    "text": "Quarto blog 만들기\n\n1. 깃헙 레포지토리 만들기\n2. 터미널에서 ssh 서버 접속\n3. 만든 레포지토리 git clone\n4. cd &lt;레포지토리이름&gt; 해서 들어가기\n5. quarto create -&gt; 엔터 -&gt; blog 선택 후 엔터\n6. ls 쳐봐서 파일들이 잘 생겼는지 확인\n7. git add . git commit -m . git push 로 생긴 파일 올리기\n8. quarto render로 터미널에서 docs 폴더 생성\n9. vi _quarto.yml 치고 들어가서 type 밑줄에다가 output-dir: docs를 입력\n10. Esc 누르고 shift zz 치면 빠져나와짐\n11. Quarto render 쳐줌 docs 안에 많은 폴더들이 생김\n12. git add . git commit -m . git push 로 생긴 파일 올리기\n13. Setting -&gt; pages -&gt; docs로 설정 후 save"
+    "text": "이 포스트에서는 Quarto blog를 만드는 방법이 step by step으로 작성되어 있습니다.\nmac 사용자와 ssh 서버를 가지고 있는 환경을 기준으로 작성되었으니 참고하시길 바랍니다.\n\n\n블로그로 만들고싶은 레포지토리를 생성합니다.\n\n\n\n각자 접속되어있는 ssh 서버에 접속합니다.\n추가적으로 git도 설치해야하는데 mac 사용자는 기본적으로 git이 설치되어 있습니다.\n\n\n\n\n만든 레포지토리를 터미널에서 git clone &lt;복사된 레포지토리 주소&gt;\ncd &lt;레포지토리이름&gt; 해서 레포지토리 폴더로 들어가기\nquarto create -&gt; 엔터 -&gt; blog 선택 후 엔터\n많은 파일들이 생겼을텐데 ls 명령어 쳐봐서 파일들이 잘 생겼는지 확인 (_config.yml, index.qmd 등등…)\n\n\n\n\n\ngit add .\ngit commit -m .\ngit push\n\n위의 명령어를 순서대로 입력하여 변경사항을 update 한다.\n그 후 github 레포지토리를 새로고침해보면 파일들이 업데이트된 걸 확인할 수 있다.\n\n\n\nquarto render\n\n위의 명령어를 입력하면 docs 폴더가 생성된다.\n\n\n\n\n\nvi _quarto.yml를 치면 새로운 창으로 들어가지게 된다.\n들어가서 type 밑줄에다가 output-dir: docs를 입력\nEsc 누르고 shift zz 치면 빠져나와짐 (꼭 동시에 누를 필요는 없음)\n\n\n\n\nQuarto render\n위의 명령어를 실행하자.\ndocs 안에 많은 파일들이 생긴다. (index.html, about.html, styles.css 등등..)\n\n\n\n\ngit add .\ngit commit -m .\ngit push\n\n위의 명령어를 순서대로 입력하여 변경사항을 update 한다.\n그 후 github 레포지토리를 새로고침해보면 파일들이 업데이트된 걸 확인할 수 있다.\n\n\n\n\n레포지토리에서 setting -&gt; pages\nbranch를 main, /docs로 변경 후 save\n\n\n\n\n다음 포스트에서는 어떻게 파일을 블로그에 올리는지 포스팅하겠다."
+  },
+  {
+    "objectID": "posts/HTMQB.html#create-github-repository",
+    "href": "posts/HTMQB.html#create-github-repository",
+    "title": "How to make quarto blog",
+    "section": "",
+    "text": "블로그로 만들고싶은 레포지토리를 생성합니다."
+  },
+  {
+    "objectID": "posts/HTMQB.html#터미널에서-ssh-서버-접속",
+    "href": "posts/HTMQB.html#터미널에서-ssh-서버-접속",
+    "title": "How to make quarto blog",
+    "section": "",
+    "text": "각자 접속되어있는 ssh 서버에 접속합니다.\n추가적으로 git도 설치해야하는데 mac 사용자는 기본적으로 git이 설치되어 있습니다."
+  },
+  {
+    "objectID": "posts/HTMQB.html#git-clone-repository",
+    "href": "posts/HTMQB.html#git-clone-repository",
+    "title": "How to make quarto blog",
+    "section": "",
+    "text": "만든 레포지토리를 터미널에서 git clone &lt;복사된 레포지토리 주소&gt;\ncd &lt;레포지토리이름&gt; 해서 레포지토리 폴더로 들어가기\nquarto create -&gt; 엔터 -&gt; blog 선택 후 엔터\n많은 파일들이 생겼을텐데 ls 명령어 쳐봐서 파일들이 잘 생겼는지 확인 (_config.yml, index.qmd 등등…)"
+  },
+  {
+    "objectID": "posts/HTMQB.html#변경사항-update",
+    "href": "posts/HTMQB.html#변경사항-update",
+    "title": "How to make quarto blog",
+    "section": "",
+    "text": "git add .\ngit commit -m .\ngit push\n\n위의 명령어를 순서대로 입력하여 변경사항을 update 한다.\n그 후 github 레포지토리를 새로고침해보면 파일들이 업데이트된 걸 확인할 수 있다."
+  },
+  {
+    "objectID": "posts/HTMQB.html#docs-폴더-생성",
+    "href": "posts/HTMQB.html#docs-폴더-생성",
+    "title": "How to make quarto blog",
+    "section": "",
+    "text": "quarto render\n\n위의 명령어를 입력하면 docs 폴더가 생성된다."
+  },
+  {
+    "objectID": "posts/HTMQB.html#docs-설정-변경",
+    "href": "posts/HTMQB.html#docs-설정-변경",
+    "title": "How to make quarto blog",
+    "section": "",
+    "text": "vi _quarto.yml를 치면 새로운 창으로 들어가지게 된다.\n들어가서 type 밑줄에다가 output-dir: docs를 입력\nEsc 누르고 shift zz 치면 빠져나와짐 (꼭 동시에 누를 필요는 없음)"
+  },
+  {
+    "objectID": "posts/HTMQB.html#quarto-render",
+    "href": "posts/HTMQB.html#quarto-render",
+    "title": "How to make quarto blog",
+    "section": "",
+    "text": "Quarto render\n위의 명령어를 실행하자.\ndocs 안에 많은 파일들이 생긴다. (index.html, about.html, styles.css 등등..)"
+  },
+  {
+    "objectID": "posts/HTMQB.html#변경사항-update-1",
+    "href": "posts/HTMQB.html#변경사항-update-1",
+    "title": "How to make quarto blog",
+    "section": "",
+    "text": "git add .\ngit commit -m .\ngit push\n\n위의 명령어를 순서대로 입력하여 변경사항을 update 한다.\n그 후 github 레포지토리를 새로고침해보면 파일들이 업데이트된 걸 확인할 수 있다."
+  },
+  {
+    "objectID": "posts/HTMQB.html#setting",
+    "href": "posts/HTMQB.html#setting",
+    "title": "How to make quarto blog",
+    "section": "",
+    "text": "레포지토리에서 setting -&gt; pages\nbranch를 main, /docs로 변경 후 save"
+  },
+  {
+    "objectID": "posts/HTMQB.html#done",
+    "href": "posts/HTMQB.html#done",
+    "title": "How to make quarto blog",
+    "section": "",
+    "text": "다음 포스트에서는 어떻게 파일을 블로그에 올리는지 포스팅하겠다."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": ".",
     "section": "",
-    "text": "No matching items"
+    "text": "How to make quarto blog\n\n\n\n\n\n\n\n\n\n\n\nMar 28, 2025\n\n\n차상진\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",

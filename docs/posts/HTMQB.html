@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="차상진">
+<meta name="dcterms.date" content="2025-03-28">
 
-<title>.</title>
+<title>. - How to make quarto blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,40 +21,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -151,28 +119,114 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-
-
-
-<div id="db4f6e2c-7ede-4833-a25b-3cfc8ccb9209" class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>Quarto blog 만들기</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> 깃헙 레포지토리 만들기</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> 터미널에서 ssh 서버 접속</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fl">3.</span> 만든 레포지토리 git clone</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fl">4.</span> cd <span class="op">&lt;</span>레포지토리이름<span class="op">&gt;</span> 해서 들어가기</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fl">5.</span> quarto create <span class="op">-&gt;</span> 엔터 <span class="op">-&gt;</span> blog 선택 후 엔터</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fl">6.</span> ls 쳐봐서 파일들이 잘 생겼는지 확인</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fl">7.</span> git add . git commit <span class="op">-</span>m . git push 로 생긴 파일 올리기</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fl">8.</span> quarto render로 터미널에서 docs 폴더 생성</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fl">9.</span> vi _quarto.yml 치고 들어가서 <span class="bu">type</span> 밑줄에다가 output<span class="op">-</span><span class="bu">dir</span>: docs를 입력</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="fl">10.</span> Esc 누르고 shift zz 치면 빠져나와짐</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="fl">11.</span> Quarto render 쳐줌 docs 안에 많은 폴더들이 생김</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="fl">12.</span> git add . git commit <span class="op">-</span>m . git push 로 생긴 파일 올리기</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fl">13.</span> Setting <span class="op">-&gt;</span> pages <span class="op">-&gt;</span> docs로 설정 후 save</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">How to make quarto blog</h1>
 </div>
 
 
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>차상진 </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">March 28, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="create-quarto-blog" class="level1">
+<h1>Create Quarto blog</h1>
+<p>이 포스트에서는 Quarto blog를 만드는 방법이 step by step으로 작성되어 있습니다.</p>
+<p>mac 사용자와 ssh 서버를 가지고 있는 환경을 기준으로 작성되었으니 참고하시길 바랍니다.</p>
+<section id="create-github-repository" class="level2">
+<h2 class="anchored" data-anchor-id="create-github-repository">1. Create github repository</h2>
+<p>블로그로 만들고싶은 레포지토리를 생성합니다.</p>
+</section>
+<section id="터미널에서-ssh-서버-접속" class="level2">
+<h2 class="anchored" data-anchor-id="터미널에서-ssh-서버-접속">2. 터미널에서 ssh 서버 접속</h2>
+<p>각자 접속되어있는 ssh 서버에 접속합니다.</p>
+<p>추가적으로 git도 설치해야하는데 mac 사용자는 기본적으로 git이 설치되어 있습니다.</p>
+</section>
+<section id="git-clone-repository" class="level2">
+<h2 class="anchored" data-anchor-id="git-clone-repository">3. git clone repository</h2>
+<ol type="1">
+<li><p>만든 레포지토리를 터미널에서 <code>git clone &lt;복사된 레포지토리 주소&gt;</code></p></li>
+<li><p><code>cd &lt;레포지토리이름&gt;</code> 해서 레포지토리 폴더로 들어가기</p></li>
+<li><p><code>quarto create -&gt; 엔터 -&gt; blog</code> 선택 후 엔터</p></li>
+<li><p>많은 파일들이 생겼을텐데 ls 명령어 쳐봐서 파일들이 잘 생겼는지 확인 (<code>_config.yml</code>, <code>index.qmd</code> 등등…)</p></li>
+</ol>
+</section>
+<section id="변경사항-update" class="level2">
+<h2 class="anchored" data-anchor-id="변경사항-update">4. 변경사항 update</h2>
+<ol type="1">
+<li><code>git add .</code></li>
+<li><code>git commit -m .</code></li>
+<li><code>git push</code></li>
+</ol>
+<p>위의 명령어를 순서대로 입력하여 변경사항을 update 한다.</p>
+<p>그 후 github 레포지토리를 새로고침해보면 파일들이 업데이트된 걸 확인할 수 있다.</p>
+</section>
+<section id="docs-폴더-생성" class="level2">
+<h2 class="anchored" data-anchor-id="docs-폴더-생성">5. docs 폴더 생성</h2>
+<p><code>quarto render</code></p>
+<ol type="1">
+<li>위의 명령어를 입력하면 docs 폴더가 생성된다.</li>
+</ol>
+</section>
+<section id="docs-설정-변경" class="level2">
+<h2 class="anchored" data-anchor-id="docs-설정-변경">6. docs 설정 변경</h2>
+<ol type="1">
+<li><code>vi _quarto.yml</code>를 치면 새로운 창으로 들어가지게 된다.</li>
+<li>들어가서 type 밑줄에다가 <code>output-dir: docs</code>를 입력</li>
+<li><code>Esc</code> 누르고 <code>shift zz</code> 치면 빠져나와짐 (꼭 동시에 누를 필요는 없음)</li>
+</ol>
+</section>
+<section id="quarto-render" class="level2">
+<h2 class="anchored" data-anchor-id="quarto-render">7. quarto render</h2>
+<p><code>Quarto render</code></p>
+<p>위의 명령어를 실행하자.</p>
+<p>docs 안에 많은 파일들이 생긴다. (<code>index.html</code>, <code>about.html</code>, <code>styles.css</code> 등등..)</p>
+</section>
+<section id="변경사항-update-1" class="level2">
+<h2 class="anchored" data-anchor-id="변경사항-update-1">8. 변경사항 update</h2>
+<ol type="1">
+<li><code>git add .</code></li>
+<li><code>git commit -m .</code></li>
+<li><code>git push</code></li>
+</ol>
+<p>위의 명령어를 순서대로 입력하여 변경사항을 update 한다.</p>
+<p>그 후 github 레포지토리를 새로고침해보면 파일들이 업데이트된 걸 확인할 수 있다.</p>
+</section>
+<section id="setting" class="level2">
+<h2 class="anchored" data-anchor-id="setting">9. Setting</h2>
+<ol type="1">
+<li>레포지토리에서 setting -&gt; pages</li>
+<li>branch를 main, /docs로 변경 후 save</li>
+</ol>
+</section>
+<section id="done" class="level2">
+<h2 class="anchored" data-anchor-id="done">10. Done</h2>
+<p>다음 포스트에서는 어떻게 파일을 블로그에 올리는지 포스팅하겠다.</p>
+
+
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
