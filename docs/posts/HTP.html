@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="차상진">
+<meta name="dcterms.date" content="2025-04-04">
 
-<title>.</title>
+<title>. - How to post</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +25,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,77 +68,19 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">.</span>
     </a>
   </div>
@@ -149,7 +91,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
@@ -170,102 +112,94 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">.</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta column-page-left">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div></div></div>
+    
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">How to post</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>차상진 </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 4, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
 
 
+</header>
 
 
+<section id="posting" class="level1">
+<h1>Posting</h1>
+<section id="본인이-포스팅하길-원하는-자료를-제작한다." class="level2">
+<h2 class="anchored" data-anchor-id="본인이-포스팅하길-원하는-자료를-제작한다.">1. 본인이 포스팅하길 원하는 자료를 제작한다.</h2>
+</section>
+<section id="jupyter-notebook을-사용한다면-본인이-포스팅을-원하는-레포지토리-폴더가-있을-것이다." class="level2">
+<h2 class="anchored" data-anchor-id="jupyter-notebook을-사용한다면-본인이-포스팅을-원하는-레포지토리-폴더가-있을-것이다.">2. Jupyter Notebook을 사용한다면 본인이 포스팅을 원하는 레포지토리 폴더가 있을 것이다.</h2>
+<ul>
+<li>Jupyter Notebook을 사용하지 않는다면 terminal에 접속하면 본인의 폴더들에 접근하면 된다.</li>
+</ul>
+</section>
+<section id="폴더에-들어가보면-docs-폴더-posts-폴더-이외에도-여러-파일들이-있을-것이다." class="level2">
+<h2 class="anchored" data-anchor-id="폴더에-들어가보면-docs-폴더-posts-폴더-이외에도-여러-파일들이-있을-것이다.">3. 폴더에 들어가보면 docs 폴더, posts 폴더 이외에도 여러 파일들이 있을 것이다.</h2>
+</section>
+<section id="본인이-포스팅하길-원하는-자료를-posts에-이동시킨다.-그-이후" class="level2">
+<h2 class="anchored" data-anchor-id="본인이-포스팅하길-원하는-자료를-posts에-이동시킨다.-그-이후">4. 본인이 포스팅하길 원하는 자료를 posts에 이동시킨다. 그 이후…</h2>
+<ul>
+<li>Jupyter Notebook 사용자 : terminal에 접속한다. (Jupyter Notebook 터미널도 상관없음)</li>
+<li>Jupyter Notebook 미사용자 : 이미 terminal에 접속이 되어있겠지?</li>
+</ul>
+</section>
+<section id="이제-quarto-render-git-add-.-git-commit--m-.-git-push-명령어를-순서대로-치면-된다.-하지만.." class="level2">
+<h2 class="anchored" data-anchor-id="이제-quarto-render-git-add-.-git-commit--m-.-git-push-명령어를-순서대로-치면-된다.-하지만..">5. 이제 <code>quarto render</code> , <code>git add .</code> , <code>git commit -m .</code> , <code>git push</code> 명령어를 순서대로 치면 된다. 하지만..!</h2>
+<p>그냥 무작정 쳤을 때 운좋으면 되고 운이 좋지 않으면 안되는 상황이 벌어진다… 조금은 이해해야할 부분이 있으니 설명해보겠다</p>
+<ul>
+<li><strong>위의 명령어들을 posts 폴더에 들어간 상태에서 수행하면 안된다</strong></li>
+<li>3번에서 했던 것 처럼 폴더에 들어갔을 때 docs 폴더, posts 폴더, 등등등이 존재하는 디렉토리에서 명령어를 쳐야한다. 즉, <code>(base) root@b32cb67a980e:~/&lt;레포지토리 이름&gt;#</code> 여기서 쳐야한다는 것이다.</li>
+</ul>
+</section>
+<section id="quarto-render" class="level2">
+<h2 class="anchored" data-anchor-id="quarto-render"><strong>6. <code>quarto render</code></strong></h2>
+<p>docs 폴더 안에 있는 <code>.html파일</code>, <code>styles.css</code> 등등이 웹페이지를 이루는 파일들이다.</p>
+<p>즉 docs 폴더 안에 있는 파일들이 변해야 웹페이지가 변한다는 의미이다.</p>
+<p>그럼 어떻게 docs 폴더의 파일들을 바꾸는가?</p>
+<p>posts 폴더에 (docs 안에 있는 posts 폴더 말고) 업로드 하고자 하는 파일을 넣고 <code>quarto render</code> 명령어를 치면 docs 폴더가 새롭게 바뀌는 것을 알 수 있다.</p>
+</section>
+<section id="docs" class="level2">
+<h2 class="anchored" data-anchor-id="docs">7. docs</h2>
+<p>docs 폴더가 바뀐 것을 확인했으면 이제 바뀐 정보들을 update 해야한다.</p>
+<p>update하는 방법은 <code>git add .</code>, <code>git commit -m .</code>, <code>git push</code> 명령어를 수행하면 된다.</p>
+</section>
+<section id="본인-인증" class="level2">
+<h2 class="anchored" data-anchor-id="본인-인증">8. 본인 인증</h2>
+<p>본인의 github 아이디와 token을 요구하는데 작성하면 된다.</p>
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1743724800000" data-listing-file-modified-sort="1743763207348" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="218">
-<div class="thumbnail">
-<p><a href="./posts/HTP.html" class="no-external"></a></p><a href="./posts/HTP.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/HTP.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/HTP.html" class="no-external">How to post</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/HTP.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/HTP.html" class="no-external">그냥 무작정 쳤을 때 운좋으면 되고 운이 좋지 않으면 안되는 상황이 벌어진다… 조금은 이해해야할 부분이 있으니 설명해보겠다</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/HTP.html" class="no-external">
-<div class="listing-date">
-Apr 4, 2025
-</div>
-<div class="listing-author">
-차상진
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1743120000000" data-listing-file-modified-sort="1743741746519" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="214">
-<div class="thumbnail">
-<p><a href="./posts/HTMQB.html" class="no-external"></a></p><a href="./posts/HTMQB.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/HTMQB.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/HTMQB.html" class="no-external">How to make quarto blog</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/HTMQB.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/HTMQB.html" class="no-external">이 포스트에서는 Quarto blog를 만드는 방법이 step by step으로 작성되어 있습니다.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/HTMQB.html" class="no-external">
-<div class="listing-date">
-Mar 28, 2025
-</div>
-<div class="listing-author">
-차상진
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</section>
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
