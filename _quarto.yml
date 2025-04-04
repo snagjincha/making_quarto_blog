@@ -3,7 +3,7 @@ project:
   output-dir: docs  
 
 website:
-  title: "Linux Shell"
+  title: "Linux Study Blog"
   navbar:
     right:
       - about.qmd
